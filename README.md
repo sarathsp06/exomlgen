@@ -1,9 +1,11 @@
 How to run the Server
 --------------------------
 ````
-cd sam
+git clone https://github.com/sarathsp06/exomlgen.git
+sudo pip install -r exomlgen/requirements.txt
 python -m exomlgen
 ````
+**NOTE** : python2.6 + is required
 ###Following code snipets shows how to create and retrieve static xmls
 
 ####Sample Create Request [PUT]
