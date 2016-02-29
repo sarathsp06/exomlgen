@@ -1,5 +1,7 @@
 How to run the Server
 --------------------------
+
+[![Join the chat at https://gitter.im/sarathsp06/exomlgen](https://badges.gitter.im/sarathsp06/exomlgen.svg)](https://gitter.im/sarathsp06/exomlgen?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ````
 git clone https://github.com/sarathsp06/exomlgen.git
 sudo pip install -r exomlgen/requirements.txt
