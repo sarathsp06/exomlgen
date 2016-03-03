@@ -7,10 +7,10 @@ Created on Mon Feb 29 12:32:48 2016
 from verb import Verb
 
 class Dial(Verb):
-    query_params = ['number']
-    variable_defaults = dict()
+    query_params = ['number','action','method','timeout','timeLimit','record']
+    variable_defaults = {'timeout': 10, 'record' : 'true', 'method':'GET'}
     name = 'dial'
     def __init__(self,variables = dict()):
-        _variables = Dial.variable_defaults.copy()
-        _variables.update(variables)
-        Verb.__init__(self,Dial.name,_variables)
+        _v = Dial.variable_defaults.copy()
+        _v.update(variables)
+        Verb.__init__(self,Dial.name,_v)

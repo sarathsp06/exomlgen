@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Dial {{#timeout}}timeout="{{timeout}}"{{/timeout}}{{#record}} 
+        record="{{record}}" {{/record}}{{#action}} 
+        action="{{action}}" {{/action}}{{#method}}
+        method="{{method}}" {{/method}}> {{#number}}
+        {{number}}{{/number}}
+    </Dial>
+</Response>

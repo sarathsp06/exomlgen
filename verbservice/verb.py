@@ -13,7 +13,7 @@ class Verb(object):
         self.variables = variables_dict
     
     def string(self):
-        f  = open(os.path.join(DIR, 'templates', self.verb)).read()
+        f  = open(os.path.join(DIR, 'templates', self.verb)+".xml").read()
         print os.path.join(DIR, 'templates', self.verb)
         s = pystache.render(f,self.variables)
         return s
