@@ -1,4 +1,4 @@
-#Exomlgen [![Join the chat at https://gitter.im/sarathsp06/exomlgen](https://badges.gitter.im/sarathsp06/exomlgen.svg)](https://gitter.im/sarathsp06/exomlgen?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# Exomlgen [![Join the chat at https://gitter.im/sarathsp06/exomlgen](https://badges.gitter.im/sarathsp06/exomlgen.svg)](https://gitter.im/sarathsp06/exomlgen?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ==========================
 
 How to run the Server
@@ -10,9 +10,9 @@ sudo pip install -r exomlgen/requirements.txt
 python -m exomlgen
 ````
 **NOTE** : python2.6 + is required
-###Following code snipets shows how to create and retrieve static xmls
+### Following code snipets shows how to create and retrieve static xmls
 
-####Sample Create Request [PUT]
+#### Sample Create Request [PUT]
 ------------------------------
 without digits
 ```
@@ -33,7 +33,7 @@ curl -XPUT http://127.0.0.1:8080/echo/SASASA/2121?digits=12 \
 -H "Content-Type: text/plain"
 ```
 
-####Sample Read Request [POST and GET]
+#### Sample Read Request [POST and GET]
 -----------------------
 Without digits
 ```
@@ -47,11 +47,11 @@ curl  http://127.0.0.1:8080/echo/SASASA/2121?digits=12
 
 
 
-###Following code snipets shows how to use exomlgen server to get exoml verbs dynamically generated
+### Following code snipets shows how to use exomlgen server to get exoml verbs dynamically generated
 ---------------
 
 
-####Dial
+#### Dial
 -----------
 
 The following will return a dial verb with +919742033616 as the number to dial
@@ -61,7 +61,7 @@ The following will return a dial verb with +919742033616 as the number to dial
 
 
 
-Configuration
+#### Configuration
 -----------------------
 1. Datastore contains the xmls
 2. There are two ways to put exoml and use it
@@ -80,7 +80,7 @@ Configuration
 
     
 
-NOTE
+### NOTE
 --------
 1. If there is no curresponding file for the test/id?digits= combination Hangup will be returned
 2. For DTMF If digits is wrong parent menu will be responded
